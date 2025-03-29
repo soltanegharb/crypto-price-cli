@@ -1,9 +1,21 @@
 import pickle
 import os
+
 from typing import Self, Any
+from abc import ABC, abstractmethod
 
 
-class PickleFiles:
+class FileHandler(ABC):
+    @abstractmethod
+    def load(self):
+        pass
+
+    @abstractmethod
+    def dump(self):
+        pass
+
+
+class PickleFiles(FileHandler):
     def __init__(self: Self):
         self.file = None
 
