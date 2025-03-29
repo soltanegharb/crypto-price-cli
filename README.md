@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```sh
-python crypto_cli.py crypto_name
+python fetch_crypto.py crypto_name
 ```
 
 Example:
